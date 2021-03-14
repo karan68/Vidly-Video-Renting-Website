@@ -1,0 +1,20 @@
+﻿
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                @Html.ActionLink("Vidly", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })&nbsp;&nbsp;&nbsp;
+                @Html.ActionLink("New Rental", "New", "Rentals")&nbsp;&nbsp;&nbsp;
+                @Html.ActionLink("Customer", "Index", "Customers")&nbsp;&nbsp;&nbsp;
+                @Html.ActionLink("Movie", "Index", "Movies")&nbsp;&nbsp;&nbsp;
+
+            </div>
+            @Html.Partial("_LoginPartial")
+
+
+        </div>
+    </div>
+   
+  
+
