@@ -27,7 +27,7 @@ namespace Vidlys.Controllers.Api
                 customersQuery = customersQuery.Where(c => c.Name.Contains(query));
 
            var customerDtos = customersQuery.ToList().Select(Mapper.Map<Customer, CustomerDto>);
-            return Ok(customerDtos);
+            return Ok(customerDtos); //ok is a abbreviation of  status code 200 response used for IHttpactionResult methods
         }
 
         //GET /api/customers/1
